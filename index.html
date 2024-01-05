@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .input-container{
+            position: relative;
+            width: 300px;
+            margin: auto;
+        }
+        input{
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+            font-size: 16px;
+        }
+        input:focus{
+            outline: none;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+
+        }
+        .message{
+            display: flex;
+            align-items: center;
+            background-color: #f8d7da;
+            padding: 10px;
+            border-radius: 5px;
+            width: 300px;
+            margin: auto;
+            margin-top: 15px;
+            display: none;
+        }
+    .error-message{
+        color: red;
+    }
+    .succes-message{
+        color:green;
+    }
+
+
+
+    </style>
+    <div class="input-container">
+        <form class="monformulaire" >
+            <input type="password" name="password"placeholder="Entrez votre mot de passe">
+        </form>
+    </div>
+    <div class="message">
+        <span class="icon">:</span>
+        <span class="text"></span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
